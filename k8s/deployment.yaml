@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: estadisticas-service
-          # El pipeline reemplaza 877762162499 y us-east-1, o usa 'kubectl set image'
-          image: 877762162499.dkr.ecr.us-east-1.amazonaws.com/estadisticas-service:latest
+          # El pipeline reemplaza <ACCOUNT_ID> y us-east-1, o usa 'kubectl set image'
+          image: <ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/estadisticas-service:latest
           ports:
             - containerPort: 8006
           env:
